@@ -3,7 +3,7 @@
 #algoritm: 
 #säkerhet:
 
-word = "test"
+word = " "
 key = 12
 letters = []
 crypt = []
@@ -15,13 +15,11 @@ while meny !=3:
     except:
         print("Du måste ange antingen (1) eller (2)")
     if meny == 1:
-        word = int(input("Mata in för kryptering: "))
-        
-
-for letter in word:
-    letters.append(ord(letter) + key)
-
-print(letters)
+        word = (input("Mata in för kryptering: "))
+        for letter in word:
+            letters.append(ord(letter) + key)
+        print(letters)
+        break
 
 for l in letters:
     crypt.append(chr(l -key))
