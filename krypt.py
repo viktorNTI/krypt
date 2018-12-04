@@ -11,7 +11,7 @@ meny = 0
 
 while meny !=3:
     try:
-        meny = int(input("Inmatning (1) Utmatning (2)"))
+        meny = int(input("Kryptera (1) Avkryptera (2)"))
     except:
         print("Du måste ange antingen (1) eller (2)")
     if meny == 1:
@@ -21,7 +21,10 @@ while meny !=3:
         print(letters)
         break
 
-for l in letters:
-    crypt.append(chr(l -key))
-
-print(crypt)
+    elif meny == 2:
+        word = (input("Mata in för avkryptering: "))
+        for l in word:
+            crypt.append(ord(l) - key)
+        print(crypt)
+        print(word)
+        break
