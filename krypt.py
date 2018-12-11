@@ -26,7 +26,10 @@ while meny !=3:
             letters.append(ord(letter) + key)
         print(letters)
         time.sleep(2)
-        print(word)
+        os.system('cls')
+        time.sleep(2)
+        for letter in letters:
+            print(chr(letter)) 
         break
 
     elif meny == 2:
@@ -39,5 +42,8 @@ while meny !=3:
             crypt.append(ord(l) - key)
         print(crypt)
         time.sleep(2)
-        print(word)
+        os.system('cls')
+        time.sleep(2)
+        for l in crypt:
+            print(chr(l))
         break
