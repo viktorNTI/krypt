@@ -1,7 +1,9 @@
 #kryptering: Kryptering används för att dölja information från alla som informationen inte är avsedd för. (Oftast med algoritmer.)
+
 #hash: Istället för att lagra lösenord i klartext så kan man spara en hash av lösenordet (oläslig) och sedan jämföra med den när du loggar in. 
+
 #algoritm: Instruktioner för hur problem/beräkningar ska lösas inom ett visst antal steg, på samma sätt varje gång.
-#säkerhet: Det är viktigt.
+
 
 import os, time
 
